@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+E:\GitHub\Hello-World\.metadata\.plugins\org.eclipse.jdt.core
+2380175872.index
+3145217803.index
+262095903.index
+850996135.index
