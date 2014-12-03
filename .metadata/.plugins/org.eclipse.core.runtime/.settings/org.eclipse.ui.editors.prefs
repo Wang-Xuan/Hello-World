@@ -20,5 +20,4 @@ occurrenceIndicationColor=66,68,69
 overviewRuler_migration=migrated_3.1
 printMarginColor=208,208,208
 searchResultIndicationColor=66,68,69
-spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine
 writeOccurrenceIndicationColor=66,68,69
