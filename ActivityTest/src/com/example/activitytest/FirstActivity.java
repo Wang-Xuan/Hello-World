@@ -2,7 +2,9 @@ package com.example.activitytest;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,11 +31,50 @@ public class FirstActivity extends Activity {
 				// 销毁Activity
 //				finish();
 				
-				// 启动新的Activity
+				// 启动新的Activity，显式Intent
+				/*Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				startActivity(intent);*/
+				
+				// 隐式Intent
+				/*Intent intent = new Intent("com.example.activitytest.ACTION_START");
+				intent.addCategory("com.example.activitytest.MY_CATEGORY");
+				startActivity(intent);*/
+				
+				// 隐式Intent其他用法，这里是通过系统游览器打开网页
+				/*Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.baidu.com"));
+				startActivity(intent);*/
+				
+				// 隐式Intent其他用法，打开电话拨打10086
+				/*Intent intent = new Intent(Intent.ACTION_DIAL);
+				intent.setData(Uri.parse("tel:10086"));
+				startActivity(intent);*/
+				
+				// 通过Intent传递数据
+				/*String data = "Hello SecondActivity";
 				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-				startActivity(intent);
+				intent.putExtra("extra_data", data);
+				startActivity(intent);*/
+				
+				// 通过Intent返回数据
+				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				startActivityForResult(intent, 1);
 			}
 		});
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		switch (requestCode) {
+		case 1:
+			if(resultCode == RESULT_OK){
+				String returnedData = data.getStringExtra("data_return");
+				Log.d("FirstActivity", returnedData);
+			}
+			break;
+		default:
+			break;
+		}
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {

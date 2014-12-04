@@ -3,11 +3,15 @@
 <fullyQualifiedTypeName name="com.example.activitytest.R.menu"/>
 <fullyQualifiedTypeName name="com.example.activitytest.R.id"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
-<fullyQualifiedTypeName name="android.view.Window"/>
-<fullyQualifiedTypeName name="com.example.activitytest.R.layout"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
-<fullyQualifiedTypeName name="com.example.activitytest.FirstActivity"/>
-<fullyQualifiedTypeName name="com.example.activitytest.SecondActivity"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.view.Window"/>
+<fullyQualifiedTypeName name="com.example.activitytest.R.layout"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="com.example.activitytest.FirstActivity"/>
+<fullyQualifiedTypeName name="com.example.activitytest.SecondActivity"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.security.PublicKey"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
 </qualifiedTypeNameHistroy>
