@@ -13,11 +13,12 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends Activity {
+public class FirstActivity extends BaseActivity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		Log.d("FirstActivity", "Task id is " + getTaskId());
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.first_layout);
 		
@@ -57,10 +58,27 @@ public class FirstActivity extends Activity {
 				startActivity(intent);*/
 				
 				// 通过Intent返回数据
-				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-				startActivityForResult(intent, 1);
+				/*Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				startActivityForResult(intent, 1);*/
+				
+				// 测试standard模式(P68)
+				/*Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
+				startActivity(intent);*/
+				
+				// 测试singleTop模式(P70)
+				/*Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				startActivity(intent);*/
+				
+				// 启动活动的最佳写法(P81)
+				SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
 			}
 		});
+	}
+	
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+		Log.d("FirstActivity", "onRestart");
 	}
 	
 	@Override
