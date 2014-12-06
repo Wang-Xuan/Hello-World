@@ -70,7 +70,6 @@ public class FirstActivity extends BaseActivity {
 				startActivity(intent);*/
 				
 				// 启动活动的最佳写法(P81)
-				// 不是太能理解,日后再来看.
 				SecondActivity.actionStart(FirstActivity.this, "data1", "data2");
 			}
 		});

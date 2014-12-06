@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=ActivityTest/src&lt;com.example.activitytest{SecondActivity.java[SecondActivity" modifiers="1" timestamp="1417620798742"/>
-<typeInfo handle="=ActivityTest/src&lt;com.example.activitytest{ThirdActivity.java[ThirdActivity" modifiers="1" timestamp="1417616676201"/>
-<typeInfo handle="=ActivityTest/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-14\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1417498570609"/>
+<typeInfo handle="=ActivityTest/src&lt;com.example.activitytest{SecondActivity.java[SecondActivity" modifiers="1" timestamp="1417837495417"/>
+<typeInfo handle="=ActivityTest/src&lt;com.example.activitytest{ThirdActivity.java[ThirdActivity" modifiers="1" timestamp="1417837543743"/>
 <typeInfo handle="=ActivityLifeCycleTest/src&lt;com.example.activitylifecycletest{NormalActivity.java[NormalActivity" modifiers="1" timestamp="1417704945098"/>
 <typeInfo handle="=ActivityLifeCycleTest/src&lt;com.example.activitylifecycletest{DialogActivity.java[DialogActivity" modifiers="1" timestamp="1417704941847"/>
+<typeInfo handle="=ActivityTest/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-14\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1417498570609"/>
 </typeInfoHistroy>
