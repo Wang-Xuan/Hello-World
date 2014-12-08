@@ -1,0 +1,7 @@
+package com.example.uicustomviews;
+
+import android.widget.LinearLayout;
+
+public class TitleLayout extends LinearLayout {
+
+}
