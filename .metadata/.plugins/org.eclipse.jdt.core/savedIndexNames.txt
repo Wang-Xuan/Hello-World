@@ -3,11 +3,7 @@ INDEX VERSION 1.126+E:\GitHub\Hello-World\.metadata\.plugins\org.eclipse.jdt.cor
 4112542185.index
 4177632849.index
 3145217803.index
-692281938.index
 356151167.index
-3099558869.index
-2589119059.index
-72556330.index
 1435839563.index
 553213162.index
 4229081663.index
