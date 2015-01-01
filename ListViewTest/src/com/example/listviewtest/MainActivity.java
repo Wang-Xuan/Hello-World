@@ -7,24 +7,39 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
-//	private String[] data = {"Apple", "Banana", "Orange", "Watermelon", "Pear", "Grape", "Pineapple", "Strawberry", "Cherry", "Mango", "blue", "black", "red", "yellow", "white", "green", "orange", "pink", "Fuck", "you", "!"};
+	
+//	private String[] data = {"Apple", "Banana", "Orange", "Watermelon", "Pear", "Grape", "Pineapple", "Strawberry", "Cherry", "Mango"};
 	private List<Fruit> fruitList = new ArrayList<Fruit>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
+		// 初始化水果数据
 		initFruits();
 		FruitAdapter adapter = new FruitAdapter(MainActivity.this, R.layout.fruit_item, fruitList);
-//		ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, data);
+/*		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+				MainActivity.this, android.R.layout.simple_list_item_1, data);*/
 		ListView listView = (ListView) findViewById(R.id.list_view);
 		listView.setAdapter(adapter);
+		listView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Fruit fruit = fruitList.get(position);
+				Toast.makeText(MainActivity.this, fruit.getName(), Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 	
 	private void initFruits() {
@@ -46,7 +61,7 @@ public class MainActivity extends Activity {
 		fruitList.add(strawberry);
 		Fruit cherry = new Fruit("Cherry", R.drawable.cherry);
 		fruitList.add(cherry);
-		Fruit mango = new Fruit("mango", R.drawable.mango);
+		Fruit mango = new Fruit("Mango", R.drawable.mango);
 		fruitList.add(mango);
 	}
 
