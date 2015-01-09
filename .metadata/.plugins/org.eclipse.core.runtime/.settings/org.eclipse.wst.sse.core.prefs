@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=ActivityTest,ActivityLifeCycleTest,UIWidgetTest,UILayoutTest,ListViewTest,UICustomViews
+task-tag-projects-already-scanned=ActivityTest,ActivityLifeCycleTest,UIWidgetTest,UILayoutTest,ListViewTest,UICustomViews,UIBestPractice,UISizeTest

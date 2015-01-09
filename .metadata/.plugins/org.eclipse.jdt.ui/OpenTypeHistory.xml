@@ -5,5 +5,6 @@
 <typeInfo handle="=ActivityLifeCycleTest/src&lt;com.example.activitylifecycletest{NormalActivity.java[NormalActivity" modifiers="1" timestamp="1417704945098"/>
 <typeInfo handle="=ActivityLifeCycleTest/src&lt;com.example.activitylifecycletest{DialogActivity.java[DialogActivity" modifiers="1" timestamp="1417704941847"/>
 <typeInfo handle="=ActivityTest/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-14\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1417498570609"/>
-<typeInfo handle="=ListViewTest/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-14\/android.jar&lt;android.widget(ArrayAdapter.class[ArrayAdapter" modifiers="33" timestamp="1417498570609"/>
+<typeInfo handle="=UIBestPractice/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-19\/android.jar&lt;android.widget(ArrayAdapter.class[ArrayAdapter" modifiers="33" timestamp="1415185566075"/>
+<typeInfo handle="=FragmentTest/E:\/Eclipse\/adt-bundle-windows-x86_64-20140702\/sdk\/platforms\/android-19\/android.jar&lt;android.app(Fragment.class[Fragment" modifiers="33" timestamp="1415185566075"/>
 </typeInfoHistroy>

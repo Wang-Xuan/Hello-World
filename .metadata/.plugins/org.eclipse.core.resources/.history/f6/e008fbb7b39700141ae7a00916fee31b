@@ -1,0 +1,7 @@
+package com.example.uibestpractice;
+
+import android.widget.ArrayAdapter;
+
+public class MsgAdapter extends ArrayAdapter<T> {
+
+}

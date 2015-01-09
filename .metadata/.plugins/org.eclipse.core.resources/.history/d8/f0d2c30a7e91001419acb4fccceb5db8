@@ -1,5 +1,0 @@
-package com.example.listviewtest;
-
-public class ArrayAdapter extends android.widget.ArrayAdapter<T>{
-
-}
