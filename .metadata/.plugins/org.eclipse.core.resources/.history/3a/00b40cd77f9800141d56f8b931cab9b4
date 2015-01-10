@@ -1,0 +1,7 @@
+package com.example.fragmentbestpractice;
+
+import android.widget.ArrayAdapter;
+
+public class NewsAdapter extends ArrayAdapter<T> {
+
+}

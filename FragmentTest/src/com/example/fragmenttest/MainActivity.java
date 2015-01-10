@@ -21,7 +21,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		button.setOnClickListener(this);
 	}
 	
-	@Override
+/*	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.button:
@@ -35,7 +35,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		default:
 			break;
 		}
-	}
+	}*/
 		
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -54,6 +54,12 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 
 
