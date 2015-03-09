@@ -1,7 +1,0 @@
-package com.example.fragmentbestpractice;
-
-import android.app.Activity;
-
-public class NontentActivity extends Activity{
-	
-}

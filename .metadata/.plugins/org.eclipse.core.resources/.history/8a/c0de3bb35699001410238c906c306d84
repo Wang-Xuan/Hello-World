@@ -1,7 +1,0 @@
-package com.example.fragmentbestpractice;
-
-import android.app.Fragment;
-
-public class NewsContentFragment extends Fragment {
-
-}
