@@ -1,0 +1,5 @@
+package com.example.broadcasttest2;
+
+public class AnotherBroadcastReceiver {
+
+}
