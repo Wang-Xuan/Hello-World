@@ -7398,3 +7398,6 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; 前言中不允�
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-03-10 14:32:35.566
+!MESSAGE Failed to load properties file for project 'BroadcastBestPractice'

@@ -49,7 +49,7 @@ public class MainActivity extends Activity
 			@Override
 			public void onClick(View v) 
 			{
-				Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
+				Intent intent = new Intent("com.example.broadcasttest.LOCAL_BROADCAST");
 				// 发送本地广播
 				localBroadcastManager.sendBroadcast(intent);
 				
@@ -60,6 +60,10 @@ public class MainActivity extends Activity
 			}
 		});
 		intentFilter = new IntentFilter();
+		intentFilter.addAction("com.example.broadcasttest.LOCAL_BROADCAST");
+		localReceiver = new LocalReceiver();
+		// 注册本地广播监听器
+		localBroadcastManager.registerReceiver(localReceiver, intentFilter);
 	}
 	
 	class LocalReceiver extends BroadcastReceiver
@@ -78,7 +82,8 @@ public class MainActivity extends Activity
 		super.onDestroy();
 		
 		// 取消注册
-		unregisterReceiver(networkChangeReceiver);
+//		unregisterReceiver(networkChangeReceiver);
+		unregisterReceiver(localReceiver);
 	}
 	
 	class NetworkChangeReceiver extends BroadcastReceiver
