@@ -7522,3 +7522,6 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 7; 不允许有匹�
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2015-03-10 21:40:35.895
 !MESSAGE Failed to load properties file for project 'SharedPreferencesTest'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-03-11 17:14:06.956
+!MESSAGE Failed to load properties file for project 'DatabaseTest'
