@@ -2,6 +2,7 @@ package com.life.androidthreadtest;
 
 import android.os.Bundle;
 import android.os.Message;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.logging.Handler;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
@@ -20,17 +20,21 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private Button changeText;
 
+
     private Handler handler = new Handler() {
+
+        @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case UPDATE_TEXT:
-                    text.setText("Nice to meet you");
+                    text.setText("Ni    ```ce to meet you");
                     break;
                 default:
                     break;
             }
         }
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
