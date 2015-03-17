@@ -25,7 +25,7 @@ public class LongRunningService extends Service{
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Log.d("LongRunningSerivice", "executed at " + new Date().toString());
+                Log.d("LongRunningService", "executed at " + new Date().toString());
             }
         }).start();
         AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
